@@ -1,0 +1,21 @@
+object uViewMain: TuViewMain
+  Left = 0
+  Top = 0
+  ClientHeight = 416
+  ClientWidth = 905
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object BtnCliente: TButton
+    Left = 152
+    Top = 168
+    Width = 129
+    Height = 41
+    Caption = 'Cadastrar Cliente'
+    TabOrder = 0
+  end
+end

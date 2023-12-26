@@ -1,0 +1,25 @@
+unit Connection.DM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TuConnectionDM = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  uConnectionDM: TuConnectionDM;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

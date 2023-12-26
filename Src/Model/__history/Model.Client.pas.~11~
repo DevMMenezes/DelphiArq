@@ -1,0 +1,47 @@
+unit Model.Client;
+
+interface
+
+type
+  IClient = interface
+    ['{51AEA0C6-172E-4BC2-BBA1-80AE7A16B892}']
+  end;
+
+  TClient = class(TInterfacedObject, IClient)
+
+  private
+    FCodigo: Integer;
+    FNome: String;
+    FCPFCNPJ: String;
+
+  public
+    property Codigo: Integer read FCodigo write FCodigo;
+    property Nome: String read FNome write FNome;
+    property CPFCNPJ: String read FCPFCNPJ write FCPFCNPJ;
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IClient;
+
+  end;
+
+implementation
+
+{ TClient }
+
+constructor TClient.Create;
+begin
+
+end;
+
+destructor TClient.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TClient.New: IClient;
+begin
+
+end;
+
+end.

@@ -1,0 +1,52 @@
+unit Model.Client;
+
+interface
+
+type
+  IClient = interface
+    ['{51AEA0C6-172E-4BC2-BBA1-80AE7A16B892}']
+  end;
+
+  TClient = class(TInterfacedObject, IClient)
+
+  private
+    FCodigo: Integer;
+    FNome: String;
+    FCPFCNPJ: String;
+    procedure SetFCodigo(const Value: Integer);
+    procedure SetFCPFCNPJ(const Value: String);
+    procedure SetFNome(const Value: String);
+
+  public
+    property Codigo: Integer read FCodigo write SetFCodigo;
+    property Nome: String read FNome write SetFNome;
+    property CPFCNPJ: String read FCPFCNPJ write SetFCPFCNPJ;
+    class function New: IClient;
+
+  end;
+
+implementation
+
+{ TClient }
+
+class function TClient.New: IClient;
+begin
+  Result := Self.Create;
+end;
+
+procedure TClient.SetFCodigo(const Value: Integer);
+begin
+  FCodigo := Value;
+end;
+
+procedure TClient.SetFCPFCNPJ(const Value: String);
+begin
+  FCPFCNPJ := Value;
+end;
+
+procedure TClient.SetFNome(const Value: String);
+begin
+  FNome := Value;
+end;
+
+end.

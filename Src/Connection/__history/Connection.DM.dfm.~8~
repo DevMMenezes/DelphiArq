@@ -1,0 +1,25 @@
+object uConnectionDM: TuConnectionDM
+  Height = 205
+  Width = 237
+  object MemClient: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 16
+    Top = 72
+    object MemClientCodigo: TIntegerField
+      FieldName = 'Codigo'
+    end
+    object MemClientNome: TStringField
+      FieldName = 'Nome'
+      Size = 255
+    end
+    object MemClientCPFCNPJ: TStringField
+      FieldName = 'CPFCNPJ'
+    end
+  end
+end

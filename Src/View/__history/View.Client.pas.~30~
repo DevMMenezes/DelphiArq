@@ -1,0 +1,91 @@
+unit View.Client;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls,
+  Model.Client, Controller.Client, Data.DB, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TuViewClient = class(TForm)
+    Codigo: TLabeledEdit;
+    Nome: TLabeledEdit;
+    CPFCNPJ: TLabeledEdit;
+    BtnNovo: TButton;
+    BtnGravar: TButton;
+    BtnExcluir: TButton;
+    DBGClient: TDBGrid;
+    dsClient: TDataSource;
+    BtnRefresh: TButton;
+    procedure BtnNovoClick(Sender: TObject);
+    procedure BtnGravarClick(Sender: TObject);
+    procedure BtnExcluirClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure ClearFields;
+  public
+    { Public declarations }
+  end;
+
+var
+  uViewClient: TuViewClient;
+
+implementation
+
+{$R *.dfm}
+
+procedure TuViewClient.BtnExcluirClick(Sender: TObject);
+var
+  objcClient: TControllerClient;
+begin
+
+  objcClient := TControllerClient.Create;
+  try
+
+    objcClient.New.Delete;
+
+    dsClient.DataSet := objcClient.New.Select;
+
+  finally
+    objcClient.Free;
+  end;
+end;
+
+procedure TuViewClient.BtnGravarClick(Sender: TObject);
+var
+  objmClient: TClient;
+  objcClient: TControllerClient;
+begin
+  objmClient := TClient.Create;
+  objcClient := TControllerClient.Create;
+  try
+    objmClient.Codigo := StrToInt(Codigo.Text);
+    objmClient.Nome := Nome.Text;
+    objmClient.CPFCNPJ := CPFCNPJ.Text;
+
+    objcClient.New.Insert(objmClient);
+
+    dsClient.DataSet := objcClient.New.Select;
+
+  finally
+    objmClient.Free;
+    objcClient.Free;
+  end;
+
+end;
+
+procedure TuViewClient.BtnNovoClick(Sender: TObject);
+begin
+  ClearFields;
+end;
+
+procedure TuViewClient.ClearFields;
+begin
+  Codigo.Clear;
+  Nome.Clear;
+  CPFCNPJ.Clear;
+end;
+
+end.

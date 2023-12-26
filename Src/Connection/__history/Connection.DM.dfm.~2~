@@ -1,0 +1,4 @@
+object uConnectionDM: TuConnectionDM
+  Height = 480
+  Width = 640
+end

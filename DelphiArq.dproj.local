@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/11/12 08:57:54.000.215,=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:37:34.000.538,=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:39:29.000.710,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\View\View.Main.pas=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:39:29.000.710,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\View\View.Main.dfm=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/12/11 18:39:40.000.400,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\DelphiArq.dproj=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/12/11 18:40:54.000.075,=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:41:13.000.259,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\View\View.Client.dfm=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Unit1.dfm</Transaction>
+    <Transaction>2023/12/11 18:41:13.000.259,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\View\View.Client.pas=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:51:59.000.757,=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:52:06.000.933,=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 18:52:33.000.932,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Model\Model.Client.pas</Transaction>
+    <Transaction>2023/12/11 19:07:58.000.011,C:\DevMMenezes\Projetos Pessoais\DelphiArq\DelphiArq.dproj=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\DelphiArq.dproj</Transaction>
+    <Transaction>2023/12/11 19:13:09.000.287,=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 19:13:26.000.796,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Controller\Controller.Client.pas</Transaction>
+    <Transaction>2023/12/11 19:19:42.000.187,=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 19:19:58.000.987,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\DAO\DAO.Client.pas</Transaction>
+    <Transaction>2023/12/11 19:25:07.000.934,=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 19:25:41.000.160,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.dfm=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Connection\Connection.DM.dfm</Transaction>
+    <Transaction>2023/12/11 19:25:41.000.160,C:\DevMMenezes\Projetos Pessoais\DelphiArq\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DelphiArq\Src\Connection\Connection.DM.pas</Transaction>
+  </Transactions>
+</BorlandProject>
